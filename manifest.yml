@@ -1,0 +1,15 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: noderedzmpjb
+  buildpack: sdk-for-nodejs
+  command: npm start
+  disk_quota: 1G
+  memory: 256MB
+  domain: eu-gb.mybluemix.net
+  host: node-red-zmpjb
+  services:
+    - node-red-zmpjb-cloudant-1590229952578-27242
+  env:
+    OPTIMIZE_MEMORY: true
